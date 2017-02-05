@@ -1,6 +1,6 @@
 # ngCameo
 
-![](/src/assets/ngCameo-yellow-logo-cleaned.svg)
+![](https://raw.githubusercontent.com/projekt-kreatywa/ngCameo/master/src/assets/ngCameo-yellow-logo.jpg)
 
 This project was generated with [angular-cli](https://github.com/angular/angular-cli) version 1.0.0-beta.24.
 
