@@ -3,6 +3,18 @@
     "version": "0.0.5",
     "author": "rafszul <rafszul@gmail.com> (http://rafszul.projekt-kreatywa.com/)",
     "license": "MIT",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/projekt-kreatywa/ngCameo.git"
+    },
+    "bugs": {
+        "url": "https://github.com/projekt-kreatywa/ngCameo/issues"
+    },
+    "keywords": [
+        "angular2",
+        "firebase",
+        "material"
+    ],
     "angular-cli": {},
     "scripts": {
         "ng": "ng",
