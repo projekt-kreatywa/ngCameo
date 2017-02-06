@@ -1,3 +1,15 @@
+<md-toolbar color="primary">
+    <span>Application Title</span>
+
+    <!-- This fills the remaining space of the current row -->
+    <span class="example-fill-remaining-space"></span>
+
+    <span>Right Aligned Text</span>
+</md-toolbar>
+
+<button md-button (click)="openDialog()">Open dialog</button>
+
+
 <div class="flex-container" fxLayout="row" fxLayout.xs="column" fxLayout.sm="column" fxLayoutAlign="center center">
     <div class="flex-item">
         <md-card>
@@ -28,6 +40,12 @@
           <md-icon>share</md-icon> SHARE</button>
             </md-card-actions>
         </md-card>
+        <md-card *ngFor="let item of items | async">
+            <img md-card-image src="{{ item.img }}">
+            <md-card-content>
+                <p>{{ item.description }}</p>
+            </md-card-content>
+        </md-card>
     </div>
     <div class="flex-item">
         <md-card>
@@ -38,8 +56,15 @@
     </div>
 </div>
 
+<!--<md-card *ngFor="let item of items | async">
+    <img md-card-image src="{{ item.img }}">
+    <md-card-content>
+        <p>{{ item.description }}</p>
+    </md-card-content>
+</md-card>
+
 <ul>
     <li class="text" *ngFor="let item of items | async">
-        {{item.$value}}
+        {{ item | json }} {{item.img}}
     </li>
-</ul>
+</ul>-->
