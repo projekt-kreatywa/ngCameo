@@ -7,9 +7,6 @@
     <span>Right Aligned Text</span>
 </md-toolbar>
 
-<button md-button (click)="openDialog()">Open dialog</button>
-
-
 <div class="flex-container" fxLayout="row" fxLayout.xs="column" fxLayout.sm="column" fxLayoutAlign="center center">
     <div class="flex-item">
         <md-card>
@@ -19,6 +16,20 @@
         </md-card>
     </div>
     <div class="flex-item">
+        <mdl-card class="demo-card-event" mdl-shadow="2">
+            <mdl-card-title mdl-card-expand>
+                <h4>
+                    Unwind! Relax! Breathe!<br> You deserve a holiday
+                </h4>
+            </mdl-card-title>
+            <mdl-card-actions mdl-card-border>
+                <button mdl-button mdl-colored mdl-ripple (click)="booknow()">
+      Book now
+      </button>
+                <mdl-layout-spacer></mdl-layout-spacer>
+                <mdl-icon>event</mdl-icon>
+            </mdl-card-actions>
+        </mdl-card>
         <md-card class="example-card">
             <md-card-header>
                 <div md-card-avatar class="example-header-image"></div>
